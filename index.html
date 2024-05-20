@@ -7,6 +7,101 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>LabQuiz</h1>
+        <p>Bem-vindo ao LabQuiz! Este é um jogo de perguntas e respostas para testar seus conhecimentos em HTML e CSS. Digite seu nome abaixo e clique em "Iniciar" para começar.</p>
+        <form id="formulario-inicio">
+            <label for="nome-jogador">Nome do jogador:</label>
+            <input type="text" id="nome-jogador" placeholder="Seu nome">
+            <button type="submit">Iniciar</button>
+        </form>
+    </header>
+
+    <hr>
+
+    <main>
+        <form id="formulario-quiz">
+            
+            <fieldset>
+                <legend>Pergunta 1: Como se define um estilo inline em HTML?</legend>
+                <input type="text" name="pergunta1" placeholder="Resposta">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pergunta 2: Qual é a tag usada para criar uma lista ordenada em HTML?</legend>
+                <input type="radio" id="ol" name="pergunta2" value="ol">
+                <label for="ol">ol</label><br>
+                <input type="radio" id="ul" name="pergunta2" value="ul">
+                <label for="ul">ul</label><br>
+                <input type="radio" id="li" name="pergunta2" value="li">
+                <label for="li">li</label><br>
+                <input type="radio" id="order-list" name="pergunta2" value="order-list">
+                <label for="order-list">order-list</label><br>            
+            </fieldset> 
+
+            <fieldset>
+                <legend>Pergunta 3: Qual propriedade CSS é usada para alterar a cor do texto?</legend>
+                <input type="radio" id="font-color" name="pergunta3" value="font-color">
+                <label for="font-color">font-color</label><br>
+                <input type="radio" id="color" name="pergunta3" value="color">
+                <label for="color">color</label><br>
+                <input type="radio" id="background-color" name="pergunta3" value="background-color">
+                <label for="background-color">background-color</label><br>
+                <input type="radio" id="text-color" name="pergunta3" value="text-color">
+                <label for="text-color">text-color</label><br>            
+            </fieldset> 
+
+            <fieldset>
+                <legend>Pergunta 4: Como se referencia um arquivo CSS externo em um documento HTML?</legend>
+                <input type="text" name="pergunta4" placeholder="Resposta">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pergunta 5: Font-size é a propriedade CSS usada para alterar o tamanho da fonte de um texto?</legend>
+                <input type="radio" id="sim" name="pergunta5" value="sim">
+                <label for="sim">sim</label><br>
+                <input type="radio" id="não" name="pergunta5" value="não">
+                <label for="não">não</label><br>                      
+            </fieldset> 
+
+            <fieldset>
+                <legend>Pergunta 6: Qual é a propriedade CSS usada para definir a largura de um elemento?</legend>
+                <input type="checkbox" id="height" name="pergunta6" value="height">
+                <label for="height"> height</label><br>
+                <input type="checkbox" id="size" name="pergunta6" value="size">
+                <label for="size"> size</label><br>
+                <input type="checkbox" id="width" name="pergunta6" value="width">
+                <label for="width"> width</label><br>
+                <input type="checkbox" id="max-width" name="pergunta6" value="max-width">
+                <label for="max-width"> max-width</label><br>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Pergunta 7: Como se cria um comentário em CSS?</legend>
+                <input type="checkbox" id="<!-- -->" name="pergunta7" value="<!-- -->">
+                <label for="<!-- -->">&lt;&#33;&#45;&#45;&#32;&#45;&#45;&gt</label><br>
+                <input type="checkbox" id="//" name="pergunta7" value="//">
+                <label for="//">//</label><br>
+                <input type="checkbox" id="/* */" name="pergunta7" value="/* */">
+                <label for="/* */">/* */</label><br>                               
+            </fieldset>
+          
+            <fieldset>
+                <legend>Pergunta 8: Qual é a propriedade CSS usada para definir a altura de um elemento?</legend>
+                <input type="checkbox" id="height2" name="pergunta8" value="height">
+                <label for="height2"> height</label><br>
+                <input type="checkbox" id="size2" name="pergunta8" value="size">
+                <label for="size2"> size</label><br>
+                <input type="checkbox" id="min-height" name="pergunta8" value="min-height">
+                <label for="min-height"> min-height</label><br>
+                <input type="checkbox" id="max-height" name="pergunta8" value="max-height">
+                <label for="max-height"> max-height</label><br>                
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Plataforma criada por <a href="https://github.com/BrenoRippel" target="_blank">Breno Rippel</a>.</p>
+    </footer>
 </body>
 </html>
