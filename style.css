@@ -36,6 +36,15 @@ label, input {
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
+    border: 1px solid #4d7c0f;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #a3e635;
+    box-shadow: inset 0px 0px 0px 3px rgba(163,230,53,1);
+    outline: none;
 }
 
 button {
@@ -52,4 +61,25 @@ button {
 button:hover {
     background-color: #4d7c0f;
     color: #f7fee7;
+}
+
+main {
+    background-color: #f7fee7;
+    color: #4d7c0f;
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #4d7c0f;
+    padding: 10px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #4d7c0f;
 }
